@@ -1,0 +1,442 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!-- saved from url=(0108)http://morecatlab.akiba.coocan.jp/lab/index.php/aruino/midi-firmware-for-arduino-uno-moco/usb-midi-hack-kit/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" class="translated-ltr"><head profile="http://gmpg.org/xfn/11"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+
+	<title>morecat_lab »USB-MIDI Hack kit for Arduino Uno R3</title>
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0 - all posts" href="http://morecatlab.akiba.coocan.jp/lab/index.php/feed/">
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0 - all comments" href="http://morecatlab.akiba.coocan.jp/lab/index.php/comments/feed/">
+	<link rel="pingback" href="http://morecatlab.akiba.coocan.jp/lab/xmlrpc.php">
+
+	<!-- style START -->
+	<!-- default style -->
+	<style type="text/css" media="screen">@import url( http://morecatlab.akiba.coocan.jp/lab/wp-content/themes/inove/style.css );</style>
+	<!-- for translations -->
+		<!--[if IE]>
+		<link rel="stylesheet" href="http://morecatlab.akiba.coocan.jp/lab/wp-content/themes/inove/ie.css" type="text/css" media="screen" />
+	<![endif]-->
+	<!-- style END -->
+
+	<!-- script START -->
+	<script type="text/javascript" src="./morecat_lab »USB-MIDI Hack kit for Arduino Uno R3_files/base.js.download"></script><style></style>
+	<script type="text/javascript" src="./morecat_lab »USB-MIDI Hack kit for Arduino Uno R3_files/menu.js.download"></script>
+	<!-- script END -->
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://morecatlab.akiba.coocan.jp/lab/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://morecatlab.akiba.coocan.jp/lab/wp-includes/wlwmanifest.xml"> 
+<link rel="index" title="morecat_lab" href="http://morecatlab.akiba.coocan.jp/lab">
+<link rel="up" title="Midi Firmware for Arduino Uno (Moco)" href="http://morecatlab.akiba.coocan.jp/lab/index.php/aruino/midi-firmware-for-arduino-uno-moco/">
+<meta name="generator" content="WordPress 2.8.4">
+
+<meta http-equiv="Content-Language" content="ja">
+<style type="text/css" media="screen">
+.qtrans_flag span { display:none }
+.qtrans_flag { height:12px; width:18px; display:block }
+.qtrans_flag_and_text { padding-left:20px }
+.qtrans_flag_ja { background:url(http://morecatlab.akiba.coocan.jp/lab/wp-content/plugins/qtranslate/flags/jp.png) no-repeat }
+.qtrans_flag_en { background:url(http://morecatlab.akiba.coocan.jp/lab/wp-content/plugins/qtranslate/flags/us.png) no-repeat }
+</style>
+<link hreflang="en" href="http://morecatlab.akiba.coocan.jp/lab/index.php/aruino/midi-firmware-for-arduino-uno-moco/usb-midi-hack-kit/?lang=en" rel="alternate" rev="alternate">
+<link rel="stylesheet" href="./morecat_lab »USB-MIDI Hack kit for Arduino Uno R3_files/style.css" type="text/css" media="screen"><!-- All in one Favicon 4.3 --><link rel="shortcut icon" href="http://morecatlab.akiba.coocan.jp/lab/favicon.ico">
+<!-- Vipers Video Quicktags v6.5.2 | http://www.viper007bond.com/wordpress-plugins/vipers-video-quicktags/ -->
+<style type="text/css">
+.vvqbox { display: block; max-width: 100%; visibility: visible !important; margin: 10px auto; } .vvqbox img { max-width: 100%; height: 100%; } .vvqbox object { max-width: 100%; } 
+</style>
+<script type="text/javascript">
+// <![CDATA[
+	var vvqflashvars = {};
+	var vvqparams = { wmode: "opaque", allowfullscreen: "true", allowscriptaccess: "always" };
+	var vvqattributes = {};
+	var vvqexpressinstall = "http://morecatlab.akiba.coocan.jp/lab/wp-content/plugins/vipers-video-quicktags/resources/expressinstall.swf";
+// ]]>
+</script>
+<style type="text/css" id="syntaxhighlighteranchor"></style>
+<script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><link type="text/css" rel="stylesheet" charset="UTF-8" href="./morecat_lab »USB-MIDI Hack kit for Arduino Uno R3_files/translateelement.css"></head>
+
+
+<body>
+<!-- wrap START -->
+<div id="wrap">
+
+<!-- container START -->
+<div id="container">
+
+<!-- header START -->
+<div id="header">
+
+	<!-- banner START -->
+		<!-- banner END -->
+
+	<div id="caption">
+		<h1 id="title"><a href="http://morecatlab.akiba.coocan.jp/lab//"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">morecat_lab</font></font></a></h1>
+		<div id="tagline"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Development of Physical Computing Platform</font></font></div>
+	</div>
+
+	<div class="fixed"></div>
+</div>
+<!-- header END -->
+
+<!-- navigation START -->
+<div id="navigation">
+	<!-- menus START -->
+	<ul id="menus">
+		<li class="page_item"><a class="home" title="home" href="http://morecatlab.akiba.coocan.jp/lab/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">home</font></font></a></li>
+		<li class="page_item page-item-2"><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/about/" title="About Me"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">About Me</font></font></a><ul style="visibility: hidden; display: block;"><li class="page_item page-item-57"><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/about/publications/" title="Publications" class=" last"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Publications</font></font></a></li></ul></li>
+<li class="page_item page-item-18"><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/monaka/" title="Monaka"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Monaka</font></font></a><ul style="visibility: hidden; display: block;"><li class="page_item page-item-705"><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/monaka/airguitar/" title="Assembling an airGuitar flavored MIDI controller" class=" last"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Assembling an airGuitar flavored MIDI controller</font></font></a></li></ul></li>
+<li class="page_item page-item-21"><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/pepper/" title="Pepper"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pepper</font></font></a></li>
+<li class="page_item page-item-23"><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/tube-amp/" title="Tube Amp"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tube Amp</font></font></a></li>
+<li class="page_item page-item-26 current_page_ancestor"><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/aruino/" title="Arduino"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Arduino</font></font></a><ul style="visibility: hidden; display: block;"><li class="page_item page-item-79"><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/aruino/7segduino/" title="7segduino" class=" subtitle"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7segduino</font></font></a><ul style="visibility: hidden; display: block;"><li class="page_item page-item-184"><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/aruino/7segduino/7segduino-application-1/" title="7segduino Application (1) Thermometer"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7segduino Application (1) Thermometer</font></font></a></li><li class="page_item page-item-189"><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/aruino/7segduino/7segduino-application-2/" title="7segduino application (2) hygrometer"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7segduino application (2) hygrometer</font></font></a></li><li class="page_item page-item-191"><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/aruino/7segduino/7segduino-application-3/" title="7segduino Application (3) barometer"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7segduino Application (3) barometer</font></font></a></li><li class="page_item page-item-401"><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/aruino/7segduino/7segduino-application-4-8digit/" title="7segduino Application (4) 8 digitization"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7segduino Application (4) 8 digitization</font></font></a></li><li class="page_item page-item-899"><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/aruino/7segduino/7segduino-application-5-usb-ampmeter/" title="7segduino Application (5) USB AmpMeter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7segduino Application (5) USB AmpMeter</font></font></a></li><li class="page_item page-item-1088"><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/aruino/7segduino/7segduino-1inch/" title="7segduino 1inch version"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7segduino 1inch version</font></font></a></li><li class="page_item page-item-1364"><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/aruino/7segduino/7segduino-application-6-gps-clock/" title="7segduino Application (6) GPS Clock"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7segduino Application (6) GPS Clock</font></font></a></li><li class="page_item page-item-1517"><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/aruino/7segduino/7segduino-bme280/" title="7segduino Application (7) Combo sensor module" class=" last"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7segduino Application (7) Combo sensor module</font></font></a></li></ul></li><li class="page_item page-item-161"><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/aruino/rcduino/" title="RCduino"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">RCduino</font></font></a></li><li class="page_item page-item-226 current_page_ancestor current_page_parent"><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/aruino/midi-firmware-for-arduino-uno-moco/" title="Midi Firmware for Arduino Uno (Moco)" class=" last subtitle"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Midi Firmware for Arduino Uno (Moco)</font></font></a><ul style="visibility: hidden; display: block;"><li class="page_item page-item-1545 current_page_item"><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/aruino/midi-firmware-for-arduino-uno-moco/usb-midi-hack-kit/" title="USB-MIDI Hack kit for Arduino Uno R3" class=" last"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">USB-MIDI Hack kit for Arduino Uno R3</font></font></a></li></ul></li></ul></li>
+<li class="page_item page-item-1047"><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/gadgets/" title="Gadgets"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Gadgets</font></font></a></li>
+		<li><a class="lastmenu" href="javascript:void(0);"></a></li>
+	</ul>
+	<!-- menus END -->
+
+	<!-- searchbox START -->
+	<div id="searchbox">
+					<form action="http://morecatlab.akiba.coocan.jp/lab/" method="get">
+				<div class="content">
+					<input type="text" class="textfield searchtip" name="s" size="24" value="">
+					<input type="submit" class="button" value="">
+				</div>
+			</form>
+			</div>
+<script type="text/javascript">
+//<![CDATA[
+	var searchbox = MGJS.$("searchbox");
+	var searchtxt = MGJS.getElementsByClassName("textfield", "input", searchbox)[0];
+	var searchbtn = MGJS.getElementsByClassName("button", "input", searchbox)[0];
+	var tiptext = "検索...";
+	if(searchtxt.value == "" || searchtxt.value == tiptext) {
+		searchtxt.className += " searchtip";
+		searchtxt.value = tiptext;
+	}
+	searchtxt.onfocus = function(e) {
+		if(searchtxt.value == tiptext) {
+			searchtxt.value = "";
+			searchtxt.className = searchtxt.className.replace(" searchtip", "");
+		}
+	}
+	searchtxt.onblur = function(e) {
+		if(searchtxt.value == "") {
+			searchtxt.className += " searchtip";
+			searchtxt.value = tiptext;
+		}
+	}
+	searchbtn.onclick = function(e) {
+		if(searchtxt.value == "" || searchtxt.value == tiptext) {
+			return false;
+		}
+	}
+//]]>
+</script>
+	<!-- searchbox END -->
+
+	<div class="fixed"></div>
+</div>
+<!-- navigation END -->
+
+<!-- content START -->
+<div id="content">
+
+	<!-- main START -->
+	<div id="main">
+
+
+	<div class="post" id="post-1545">
+		<h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">USB-MIDI Hack kit for Arduino Uno R3</font></font></h2>
+		<div class="info">
+			<span class="date"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">May 17, 2015</font></font></span>
+									<div class="fixed"></div>
+		</div>
+		<div class="content">
+			<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">With USB - MIDI Hack kit for Arduino Uno R3, you can immediately create a device using USB - MIDI.</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Although you can rewrite MocoLUFA's firmware yourself, since it seems that thresholds are high for beginners, we decided to distribute development kits along with the switch.</font></font></p>
+<p><a href="http://morecatlab.akiba.coocan.jp/lab/wp-content/uploads/2015/05/IMGP0913.jpg"><img class="aligncenter size-medium wp-image-1559" title="mode switch" src="./morecat_lab »USB-MIDI Hack kit for Arduino Uno R3_files/IMGP0913-400x264.jpg" alt="mode switch" width="400" height="264"></a></p>
+<h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1. Contents of kit</font></font></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">USB-MIDI Hack kit for Arduino Uno R3 includes the following items.</font></font></p>
+<p><a href="http://morecatlab.akiba.coocan.jp/lab/wp-content/uploads/2015/05/mocolufa-hackkit.jpg"><img class="aligncenter size-medium wp-image-1551" title="mocolufa-hackkit" src="./morecat_lab »USB-MIDI Hack kit for Arduino Uno R3_files/mocolufa-hackkit-396x300.jpg" alt="mocolufa-hackkit" width="396" height="300"></a></p>
+<ul>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Arduno Uno R3 (DIP version) Updated firmware to MocoLUFA</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MocoLUFA firmware · selector switch board</font></font></li>
+</ul>
+<h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2. How to use</font></font></h2>
+<ol>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Insert the selector switch board into the ISP connector near the USB connector.</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Switching the slide switch and pressing the reset button switches the mode.</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Develop sketches while switching modes.</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">After development, if you remove the selector switch board, it becomes a USB-MIDI device.</font></font></li>
+</ol>
+<ul>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">USB-MIDI mode</font></font></li>
+</ul>
+<p style="padding-left: 60px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">If it is set to USB side, it will be in USB-MIDI mode. </font><font style="vertical-align: inherit;">(The LED on the selector switch board lights up.)</font></font></p>
+<p style="padding-left: 60px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">In this mode, the PC recognizes it as a USB-MIDI device. </font><font style="vertical-align: inherit;">You can send data from DTM software etc.</font></font></p>
+<p style="padding-left: 60px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">With Arduino sketches, you can create programs using MIDI libraries.</font></font></p>
+<p style="padding-left: 60px;"><a href="http://morecatlab.akiba.coocan.jp/lab/wp-content/uploads/2015/05/mocolufa-midimode.jpg"><img class="aligncenter size-medium wp-image-1552" title="mocolufa-midimode" src="./morecat_lab »USB-MIDI Hack kit for Arduino Uno R3_files/mocolufa-midimode-400x275.jpg" alt="mocolufa-midimode" width="400" height="275"></a></p>
+<ul>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">USB-Serial mode</font></font></li>
+</ul>
+<p style="padding-left: 60px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">If it is on the opposite side of USB, it will be in USB - Serial mode. </font><font style="vertical-align: inherit;">(The LED on the selector switch board goes out.)</font></font></p>
+<p style="padding-left: 60px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">In this mode you can write sketches from the Arduino IDE.</font></font></p>
+<p style="padding-left: 60px;"><a href="http://morecatlab.akiba.coocan.jp/lab/wp-content/uploads/2015/05/mocolufa-serialmode.jpg"><img class="aligncenter size-medium wp-image-1553" title="mocolufa-serialmode" src="./morecat_lab »USB-MIDI Hack kit for Arduino Uno R3_files/mocolufa-serialmode-400x299.jpg" alt="mocolufa-serialmode" width="400" height="299"></a></p>
+<h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3. TIPS / bonus</font></font></h2>
+<h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3.1 High speed mode</font></font></h3>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">When shorting the jumper of HI - SP, it communicates with Arduino 's sketch at a speed of 1 Mbps. </font><font style="vertical-align: inherit;">To use this mode, it is necessary to change the sketch and specify 1 Mbps speed.</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">When sending a large amount of data, there is a possibility that data loss may be reduced.</font></font></p>
+<p><a href="http://morecatlab.akiba.coocan.jp/lab/wp-content/uploads/2015/05/mocolufa-highspeed.jpg"><img class="aligncenter size-medium wp-image-1554" title="mocolufa-highspeed" src="./morecat_lab »USB-MIDI Hack kit for Arduino Uno R3_files/mocolufa-highspeed-397x300.jpg" alt="mocolufa-highspeed" width="397" height="300"></a></p>
+<h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3.2 Combined use with shield</font></font></h3>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Although the shape of the switch is designed so as not to disturb the shield, there is a possibility of interference in the height direction.</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">In case of interfering, squatting up sockets only during development will not get in the way.</font></font></p>
+<h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3.3 When to DIY</font></font></h3>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The source code of MocoLUFA is </font></font><a href="https://github.com/kuwatay/mocolufa"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">available from GitHub</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> .</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Completion</font></font></p>
+			<div class="fixed"></div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="./morecat_lab »USB-MIDI Hack kit for Arduino Uno R3_files/comment.js.download"></script>
+
+
+
+
+	<div class="messagebox"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+		Comments are not accepted.	</font></font></div>
+
+
+	</div>
+	<!-- main END -->
+
+	
+<!-- sidebar START -->
+<div id="sidebar">
+
+<!-- sidebar north START -->
+<div id="northsidebar" class="sidebar">
+
+	<!-- feeds -->
+	<div class="widget widget_feeds">
+		<div class="content">
+			<div id="subscribe"><a rel="external nofollow" id="feedrss" title="Subscribe to this blog feed ..." href="http://morecatlab.akiba.coocan.jp/lab/index.php/feed/"><abbr title="Really Simple Syndication"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">RSS</font></font></abbr></a><ul id="feed_readers" style="visibility: hidden; display: block;"><li id="google_reader"><a rel="external nofollow" class="reader" title="Subscribe with Google" href="http://fusion.google.com/add?feedurl=http://morecatlab.akiba.coocan.jp/lab/index.php/feed/"><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Google</font></font></span></a></li><li id="youdao_reader"><a rel="external nofollow" class="reader" title="Subscribe with Youdao" href="http://reader.youdao.com/#url=http://morecatlab.akiba.coocan.jp/lab/index.php/feed/"><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Youdao</font></font></span></a></li><li id="xianguo_reader"><a rel="external nofollow" class="reader" title="Subscribe with Xian Guo" href="http://www.xianguo.com/subscribe.php?url=http://morecatlab.akiba.coocan.jp/lab/index.php/feed/"><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Xian Guo</font></font></span></a></li><li id="zhuaxia_reader"><a rel="external nofollow" class="reader" title="Subscribe with Zhua Xia" href="http://www.zhuaxia.com/add_channel.php?url=http://morecatlab.akiba.coocan.jp/lab/index.php/feed/"><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zhua Xia</font></font></span></a></li><li id="yahoo_reader"><a rel="external nofollow" class="reader" title="Subscribe with My Yahoo!" href="http://add.my.yahoo.com/rss?url=http://morecatlab.akiba.coocan.jp/lab/index.php/feed/"><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">My Yahoo!</font></font></span></a></li><li id="newsgator_reader"><a rel="external nofollow" class="reader" title="Subscribe with newsgator" href="http://www.newsgator.com/ngs/subscriber/subfext.aspx?url=http://morecatlab.akiba.coocan.jp/lab/index.php/feed/"><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">newsgator</font></font></span></a></li><li id="bloglines_reader"><a rel="external nofollow" class="reader" title="Subscribe with Bloglines" href="http://www.bloglines.com/sub/http://morecatlab.akiba.coocan.jp/lab/index.php/feed/"><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bloglines</font></font></span></a></li><li id="inezha_reader"><a rel="external nofollow" class="reader last" title="Subscribe with iNezha" href="http://inezha.com/add?url=http://morecatlab.akiba.coocan.jp/lab/index.php/feed/"><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">iNezha</font></font></span></a></li></ul></div>
+						<div class="fixed"></div>
+		</div>
+	</div>
+
+	<!-- showcase -->
+	
+<div id="qtranslate-3" class="widget widget_qtranslate"><h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Language</font></font></h3><ul class="qtrans_language_chooser" id="qtranslate-3-chooser"><li class="active"><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/aruino/midi-firmware-for-arduino-uno-moco/usb-midi-hack-kit/" class="qtrans_flag_ja qtrans_flag_and_text"><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Japanese</font></font></span></a></li><li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/aruino/midi-firmware-for-arduino-uno-moco/usb-midi-hack-kit/?lang=en" class="qtrans_flag_en qtrans_flag_and_text"><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">English</font></font></span></a></li></ul><div class="qtrans_widget_end"></div></div><div id="calendar-3" class="widget widget_calendar"><h3>&nbsp;</h3><div id="calendar_wrap"><table id="wp-calendar" summary="カレンダー">
+	<caption><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">January 2018</font></font></caption>
+	<thead>
+	<tr>
+		<th abbr="月曜日" scope="col" title="Monday"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Month</font></font></th>
+		<th abbr="火曜日" scope="col" title="Tuesday"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">fire</font></font></th>
+		<th abbr="水曜日" scope="col" title="Wednesday"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">water</font></font></th>
+		<th abbr="木曜日" scope="col" title="Thursday"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">wood</font></font></th>
+		<th abbr="金曜日" scope="col" title="Friday"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Money</font></font></th>
+		<th abbr="土曜日" scope="col" title="Saturday"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">soil</font></font></th>
+		<th abbr="日曜日" scope="col" title="Sunday"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Day</font></font></th>
+	</tr>
+	</thead>
+
+	<tfoot>
+	<tr>
+		<td abbr="2月" colspan="3" id="prev"><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2016/02/" title="View posts in February 2016"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">" February</font></font></a></td>
+		<td class="pad">&nbsp;</td>
+		<td colspan="3" id="next" class="pad">&nbsp;</td>
+	</tr>
+	</tfoot>
+
+	<tbody>
+	<tr><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Four</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Five</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">6</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7</font></font></td>
+	</tr>
+	<tr>
+		<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">8</font></font></td><td id="today"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">9</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ten</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">11</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">12</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">13</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">14</font></font></td>
+	</tr>
+	<tr>
+		<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">15</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">16</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">17</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">18</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">19</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">20</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">twenty one</font></font></td>
+	</tr>
+	<tr>
+		<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">twenty two</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">twenty three</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">twenty four</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">twenty five</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">26</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">27</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">28</font></font></td>
+	</tr>
+	<tr>
+		<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">29</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">30</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">31</font></font></td>
+		<td class="pad" colspan="4">&nbsp;</td>
+	</tr>
+	</tbody>
+	</table></div></div>		<div id="recent-posts-3" class="widget widget_recent_entries">		<h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Recent submissions</font></font></h3>		<ul>
+				<li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2016/02/arduino-nucleof103/" title="Arduino - STM 32 Nucleo STM 32 F 103 RB"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Arduino - STM 32 Nucleo STM 32 F 103 RB </font></font></a></li>
+				<li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2016/02/arduino_stm32-bpb/" title="Arduino_STM 32 Blue Pill Board (BPB)"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Arduino_STM 32 Blue Pill Board (BPB) </font></font></a></li>
+				<li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2016/01/arduino_stm32/" title="Try Arduino_STM 32"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Try Arduino_STM 32 </font></font></a></li>
+				<li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2016/01/u-hed/" title="U-HED"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">U-HED </font></font></a></li>
+				<li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2016/01/uno-nano/" title="Uno-nano?"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Uno-nano? </font></font></a></li>
+				</ul>
+		</div><div align="center"><span id="counter"></span> 
+<script language="JavaScript" type="text/javascript" src="http://img.vermessen.net/instcounter/ee.js"></script> 
+<script>var style="margin:0px; display:inline; border:0px;";
+var reload=3600;
+var id=87532
+;
+var vornullen=0;
+var alterstand=0;
+var staturl="http://morecatlab.akiba.coocan.jp/lab/wp-content/plugins/counter/showstat.php";
+var marker="1315875161";
+var design="z1";var lang="ja";ee();</script><noscript>&lt;a href="http://www.sorben.org/counter/"&gt;&lt;img border="0" src="http://img.vermessen.net/instcounter/keiner.png"&gt;&lt;/a&gt;</noscript> </div><div id="search-3" class="widget widget_search"><form role="search" method="get" id="searchform" action="http://morecatlab.akiba.coocan.jp/lab/">
+	<div><label class="screen-reader-text" for="s"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Search:</font></font></label>
+	<input type="text" value="" name="s" id="s">
+	<font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><input type="submit" id="searchsubmit" value="Search"></font></font>
+	</div>
+	</form></div></div>
+<!-- sidebar north END -->
+
+<div id="centersidebar">
+
+	<!-- sidebar east START -->
+	<div id="eastsidebar" class="sidebar">
+	
+		<!-- categories -->
+		<div class="widget widget_categories">
+			<h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Categories</font></font></h3>
+			<ul>
+					<li class="cat-item cat-item-20"><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/category/3d-printer/" title="View all posts included in 3D Printer"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3D Printer</font></font></a>
+</li>
+	<li class="cat-item cat-item-3"><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/category/arduino/" title="View all posts included in Arduino"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Arduino</font></font></a>
+</li>
+	<li class="cat-item cat-item-17"><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/category/arm/" title="Show all posts included in ARM"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ARM</font></font></a>
+</li>
+	<li class="cat-item cat-item-11"><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/category/avr/" title="Show all posts included in AVR"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">AVR</font></font></a>
+</li>
+	<li class="cat-item cat-item-18"><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/category/beaglebone/" title="View all posts included in BeagleBone"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">BeagleBone</font></font></a>
+</li>
+	<li class="cat-item cat-item-19"><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/category/mbed/" title="Show all posts included in mbed"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">mbed</font></font></a>
+</li>
+	<li class="cat-item cat-item-6"><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/category/pepper/" title="Show all posts included in Pepper"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pepper</font></font></a>
+</li>
+	<li class="cat-item cat-item-7"><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/category/physical-computing/" title="View all posts included in Physical Computing"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Physical Computing</font></font></a>
+</li>
+	<li class="cat-item cat-item-13"><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/category/syhthe/" title="View all posts included in Syhthe"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Syhthe</font></font></a>
+</li>
+	<li class="cat-item cat-item-5"><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/category/tube/" title="Show all posts on Tube"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tube</font></font></a>
+</li>
+	<li class="cat-item cat-item-14"><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/category/%e3%82%aa%e3%83%bc%e3%83%87%e3%82%a3%e3%82%aa/" title="Show all posts included in audio"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">audio</font></font></a>
+</li>
+	<li class="cat-item cat-item-10"><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/category/academic/" title="Show all posts included in the seminar, conference"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Seminar, conference</font></font></a>
+</li>
+	<li class="cat-item cat-item-1"><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/category/unclassfied/" title="Show all posts included in unclassified"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Uncategorized</font></font></a>
+</li>
+			</ul>
+		</div>
+
+		</div>
+	<!-- sidebar east END -->
+
+	<!-- sidebar west START -->
+	<div id="westsidebar" class="sidebar">
+	
+		<!-- blogroll -->
+		<div class="widget widget_links">
+			<h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Blogroll</font></font></h3>
+			<ul>
+				<li><a href="http://morecatlab.akiba.coocan.jp/morecat_lab" rel="me" title="Development diary (old HP) such as Ginger / Pepper."><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ginger Under Development (old page)</font></font></a></li>
+<li><a href="http://twilog.org/morecat_lab" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">morecat_lab on twilog</font></font></a></li>
+			</ul>
+		</div>
+
+		</div>
+	<!-- sidebar west END -->
+	<div class="fixed"></div>
+</div>
+
+<!-- sidebar south START -->
+<div id="southsidebar" class="sidebar">
+
+	<!-- archives -->
+	<div class="widget">
+		<h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Archives</font></font></h3>
+					<ul>
+					<li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2016/02/" title="February 2016"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">February 2016</font></font></a></li>
+	<li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2016/01/" title="January 2016"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">January 2016</font></font></a></li>
+	<li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2015/11/" title="November 2015"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">November 2015</font></font></a></li>
+	<li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2015/10/" title="October 2015"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">October 2015</font></font></a></li>
+	<li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2015/09/" title="September 2015"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">September 2015</font></font></a></li>
+	<li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2015/08/" title="August 2015"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">August 2015</font></font></a></li>
+	<li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2015/04/" title="April 2015"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">April 2015</font></font></a></li>
+	<li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2014/12/" title="December 2014"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">December 2014</font></font></a></li>
+	<li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2014/11/" title="November 2014"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">November 2014</font></font></a></li>
+	<li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2014/09/" title="September 2014"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">September 2014</font></font></a></li>
+	<li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2014/07/" title="July 2014"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">July 2014</font></font></a></li>
+	<li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2014/06/" title="June 2014"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">June 2014</font></font></a></li>
+	<li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2014/02/" title="February 2014"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">February 2014</font></font></a></li>
+	<li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2014/01/" title="January 2014"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">January 2014</font></font></a></li>
+	<li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2013/11/" title="November 2013"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">November 2013</font></font></a></li>
+	<li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2013/10/" title="October 2013"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">October 2013</font></font></a></li>
+	<li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2013/09/" title="September 2013"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">September 2013</font></font></a></li>
+	<li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2013/07/" title="July 2013"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">July 2013</font></font></a></li>
+	<li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2013/06/" title="June 2013"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">June 2013</font></font></a></li>
+	<li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2013/05/" title="May 2013"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">May 2013</font></font></a></li>
+	<li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2013/02/" title="February 2013"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">February 2013</font></font></a></li>
+	<li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2013/01/" title="January 2013"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">January 2013</font></font></a></li>
+	<li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2012/11/" title="November 2012"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">November 2012</font></font></a></li>
+	<li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2012/10/" title="October 2012"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">October 2012</font></font></a></li>
+	<li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2012/09/" title="September 2012"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">September 2012</font></font></a></li>
+	<li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2012/08/" title="August 2012"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">August 2012</font></font></a></li>
+	<li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2012/06/" title="June 2012"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">June 2012</font></font></a></li>
+	<li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2012/05/" title="May 2012"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">May 2012</font></font></a></li>
+	<li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2012/04/" title="April 2012"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">April 2012</font></font></a></li>
+	<li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2012/03/" title="March 2012"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">March 2012</font></font></a></li>
+	<li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2012/02/" title="February 2012"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">February 2012</font></font></a></li>
+	<li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2012/01/" title="January 2012"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">January 2012</font></font></a></li>
+	<li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2011/12/" title="December 2011"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">December 2011</font></font></a></li>
+	<li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2011/10/" title="October 2011"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">October 2011</font></font></a></li>
+	<li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2011/09/" title="September 2011"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">September 2011</font></font></a></li>
+	<li><a href="http://morecatlab.akiba.coocan.jp/lab/index.php/2011/08/" title="August 2011"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">August 2011</font></font></a></li>
+			</ul>
+			</div>
+
+	<!-- meta -->
+	<div class="widget">
+		<h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Meta</font></font></h3>
+		<ul>
+						<li><a href="http://morecatlab.akiba.coocan.jp/lab/wp-login.php"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Login</font></font></a></li>
+		</ul>
+	</div>
+
+</div>
+<!-- sidebar south END -->
+
+</div>
+<!-- sidebar END -->
+	<div class="fixed"></div>
+</div>
+<!-- content END -->
+
+<!-- footer START -->
+<div id="footer">
+	<a id="gotop" href="http://morecatlab.akiba.coocan.jp/lab/index.php/aruino/midi-firmware-for-arduino-uno-moco/usb-midi-hack-kit/#" onclick="MGJS.goTop();return false;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Top </font></font></a>
+	<a id="powered" href="http://wordpress.org/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">WordPress</font></font></a>
+	<div id="copyright"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+		Copyright © 2011-2016 morecat_lab	</font></font></div>
+	<div id="themeinfo"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+		Theme by </font></font><a href="http://www.neoease.com/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">NeoEase</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> . Valid </font></font><a href="http://validator.w3.org/check?uri=referer"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">XHTML 1.1</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> and </font></font><a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CSS 3</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> .	</font></font></div>
+</div>
+<!-- footer END -->
+
+</div>
+<!-- container END -->
+</div>
+<!-- wrap END -->
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-15595369-2']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+})();
+</script><div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="./morecat_lab »USB-MIDI Hack kit for Arduino Uno R3_files/translate_24dp.png" width="20" height="20" alt="Google Translate"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">Original text</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">Contribute a better translation</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div>
+
+
+
+
+<div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div></body></html>
