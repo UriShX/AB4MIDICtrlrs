@@ -1,4 +1,4 @@
-update=27/03/2018 14:28:24
+update=IDT 12:54:00 2018 יול 07 ש'
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=
@@ -232,3 +230,16 @@ LibName200=C:/Users/AviS/Dropbox/KiCad/MyLibraries/digikey-kicad-library-master/
 LibName201=C:/Users/AviS/Dropbox/KiCad/MyLibraries/digikey-kicad-library-master/digikey-symbols/dk_TVS-Diodes
 LibName202=C:/Users/AviS/Dropbox/KiCad/MyLibraries/digikey-kicad-library-master/digikey-symbols/dk_TVS-Mixed-Technology
 LibName203=C:/Users/AviS/Dropbox/KiCad/MyLibraries/digikey-kicad-library-master/digikey-symbols/dk_USB-DVI-HDMI-Connectors
+LibName204=DI.DO_Shield_components_lib
+[general]
+version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60

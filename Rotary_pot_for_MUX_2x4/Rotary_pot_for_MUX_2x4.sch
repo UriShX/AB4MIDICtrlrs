@@ -1,0 +1,404 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Rotary_pot_for_MUX_2x4-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Potentiometer sub-board for AB4MC"
+Date "2018-06-28"
+Rev "0.1"
+Comp "UriShX"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L POT RV1
+U 1 1 5B34BF6F
+P 3500 3550
+F 0 "RV1" V 3325 3550 50  0000 C CNN
+F 1 "10k_B" V 3400 3550 50  0000 C CNN
+F 2 "MyFootprintLib:Potentiometer_Bourns_PTV09A_Horizontal" H 3500 3550 50  0001 C CNN
+F 3 "" H 3500 3550 50  0001 C CNN
+	1    3500 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L VCC #PWR01
+U 1 1 5B34BFC5
+P 5800 1400
+F 0 "#PWR01" H 5800 1250 50  0001 C CNN
+F 1 "VCC" H 5800 1550 50  0000 C CNN
+F 2 "" H 5800 1400 50  0001 C CNN
+F 3 "" H 5800 1400 50  0001 C CNN
+	1    5800 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5B34BFDB
+P 4750 2450
+F 0 "#PWR02" H 4750 2200 50  0001 C CNN
+F 1 "GND" H 4750 2300 50  0000 C CNN
+F 2 "" H 4750 2450 50  0001 C CNN
+F 3 "" H 4750 2450 50  0001 C CNN
+	1    4750 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_02x05_Odd_Even J1
+U 1 1 5B34C019
+P 5200 1950
+F 0 "J1" H 5250 2250 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 5250 1650 50  0000 C CNN
+F 2 "MyFootprintLib:2X5-SHROUDED_rightAngle" H 5200 1950 50  0001 C CNN
+F 3 "" H 5200 1950 50  0001 C CNN
+	1    5200 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L POT RV2
+U 1 1 5B34C75B
+P 3500 4200
+F 0 "RV2" V 3325 4200 50  0000 C CNN
+F 1 "10k_B" V 3400 4200 50  0000 C CNN
+F 2 "MyFootprintLib:Potentiometer_Bourns_PTV09A_Horizontal" H 3500 4200 50  0001 C CNN
+F 3 "" H 3500 4200 50  0001 C CNN
+	1    3500 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L POT RV3
+U 1 1 5B34C798
+P 3500 4900
+F 0 "RV3" V 3325 4900 50  0000 C CNN
+F 1 "10k_B" V 3400 4900 50  0000 C CNN
+F 2 "MyFootprintLib:Potentiometer_Bourns_PTV09A_Horizontal" H 3500 4900 50  0001 C CNN
+F 3 "" H 3500 4900 50  0001 C CNN
+	1    3500 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L POT RV4
+U 1 1 5B34C7E0
+P 3500 5550
+F 0 "RV4" V 3325 5550 50  0000 C CNN
+F 1 "10k_B" V 3400 5550 50  0000 C CNN
+F 2 "MyFootprintLib:Potentiometer_Bourns_PTV09A_Horizontal" H 3500 5550 50  0001 C CNN
+F 3 "" H 3500 5550 50  0001 C CNN
+	1    3500 5550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 5B34CDCB
+P 3000 5850
+F 0 "#PWR03" H 3000 5600 50  0001 C CNN
+F 1 "GND" H 3000 5700 50  0000 C CNN
+F 2 "" H 3000 5850 50  0001 C CNN
+F 3 "" H 3000 5850 50  0001 C CNN
+	1    3000 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR04
+U 1 1 5B34CFB2
+P 3800 2600
+F 0 "#PWR04" H 3800 2450 50  0001 C CNN
+F 1 "VCC" H 3800 2750 50  0000 C CNN
+F 2 "" H 3800 2600 50  0001 C CNN
+F 3 "" H 3800 2600 50  0001 C CNN
+	1    3800 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x06_Female J3
+U 1 1 5B34D48B
+P 8750 1750
+F 0 "J3" H 8750 2050 50  0000 C CNN
+F 1 "Conn_01x06_Female" H 8750 1350 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Angled_1x06_Pitch2.54mm" H 8750 1750 50  0001 C CNN
+F 3 "" H 8750 1750 50  0001 C CNN
+	1    8750 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR05
+U 1 1 5B34D69C
+P 8400 1350
+F 0 "#PWR05" H 8400 1200 50  0001 C CNN
+F 1 "VCC" H 8400 1500 50  0000 C CNN
+F 2 "" H 8400 1350 50  0001 C CNN
+F 3 "" H 8400 1350 50  0001 C CNN
+	1    8400 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 5B34D6FF
+P 8150 2250
+F 0 "#PWR06" H 8150 2000 50  0001 C CNN
+F 1 "GND" H 8150 2100 50  0000 C CNN
+F 2 "" H 8150 2250 50  0001 C CNN
+F 3 "" H 8150 2250 50  0001 C CNN
+	1    8150 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L POT RV5
+U 1 1 5B34DC0B
+P 6250 3500
+F 0 "RV5" V 6075 3500 50  0000 C CNN
+F 1 "10k_B" V 6150 3500 50  0000 C CNN
+F 2 "MyFootprintLib:Potentiometer_Bourns_PTV09A_Horizontal" H 6250 3500 50  0001 C CNN
+F 3 "" H 6250 3500 50  0001 C CNN
+	1    6250 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L POT RV6
+U 1 1 5B34DC11
+P 6250 4150
+F 0 "RV6" V 6075 4150 50  0000 C CNN
+F 1 "10k_B" V 6150 4150 50  0000 C CNN
+F 2 "MyFootprintLib:Potentiometer_Bourns_PTV09A_Horizontal" H 6250 4150 50  0001 C CNN
+F 3 "" H 6250 4150 50  0001 C CNN
+	1    6250 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L POT RV7
+U 1 1 5B34DC17
+P 6250 4850
+F 0 "RV7" V 6075 4850 50  0000 C CNN
+F 1 "10k_B" V 6150 4850 50  0000 C CNN
+F 2 "MyFootprintLib:Potentiometer_Bourns_PTV09A_Horizontal" H 6250 4850 50  0001 C CNN
+F 3 "" H 6250 4850 50  0001 C CNN
+	1    6250 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L POT RV8
+U 1 1 5B34DC1D
+P 6250 5500
+F 0 "RV8" V 6075 5500 50  0000 C CNN
+F 1 "10k_B" V 6150 5500 50  0000 C CNN
+F 2 "MyFootprintLib:Potentiometer_Bourns_PTV09A_Horizontal" H 6250 5500 50  0001 C CNN
+F 3 "" H 6250 5500 50  0001 C CNN
+	1    6250 5500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 5B34DC23
+P 5750 5800
+F 0 "#PWR07" H 5750 5550 50  0001 C CNN
+F 1 "GND" H 5750 5650 50  0000 C CNN
+F 2 "" H 5750 5800 50  0001 C CNN
+F 3 "" H 5750 5800 50  0001 C CNN
+	1    5750 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x06_Male J2
+U 1 1 5B34E201
+P 5250 2850
+F 0 "J2" H 5250 3150 50  0000 C CNN
+F 1 "Conn_01x06_Male" H 5250 2450 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x06_Pitch2.54mm" H 5250 2850 50  0001 C CNN
+F 3 "" H 5250 2850 50  0001 C CNN
+	1    5250 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 2150 5800 2150
+Wire Wire Line
+	5800 2150 5800 1400
+Wire Wire Line
+	5000 2150 4750 2150
+Wire Wire Line
+	4750 2150 4750 2450
+Wire Wire Line
+	5000 1750 3500 1750
+Wire Wire Line
+	3500 1750 3500 3400
+Wire Wire Line
+	4050 1850 4050 3950
+Wire Wire Line
+	4050 3950 3500 3950
+Wire Wire Line
+	3500 3950 3500 4050
+Wire Wire Line
+	3500 4750 3500 4650
+Wire Wire Line
+	3500 4650 4250 4650
+Wire Wire Line
+	4250 4650 4250 1950
+Wire Wire Line
+	5000 2050 4450 2050
+Wire Wire Line
+	4450 2050 4450 5300
+Wire Wire Line
+	4450 5300 3500 5300
+Wire Wire Line
+	3500 5300 3500 5400
+Wire Wire Line
+	4250 1950 5000 1950
+Wire Wire Line
+	4050 1850 5000 1850
+Wire Wire Line
+	3000 3550 3000 5850
+Wire Wire Line
+	3000 3550 3350 3550
+Wire Wire Line
+	3350 4200 3000 4200
+Connection ~ 3000 4200
+Wire Wire Line
+	3350 4900 3000 4900
+Connection ~ 3000 4900
+Wire Wire Line
+	3350 5550 3000 5550
+Connection ~ 3000 5550
+Wire Wire Line
+	3800 2600 3800 5550
+Wire Wire Line
+	3800 5550 3650 5550
+Wire Wire Line
+	3650 4900 3800 4900
+Connection ~ 3800 4900
+Wire Wire Line
+	3650 4200 3800 4200
+Connection ~ 3800 4200
+Wire Wire Line
+	3650 3550 3800 3550
+Connection ~ 3800 3550
+Wire Wire Line
+	5500 2050 8550 2050
+Wire Wire Line
+	5500 1950 8550 1950
+Wire Wire Line
+	5500 1850 8550 1850
+Wire Wire Line
+	5500 1750 8550 1750
+Wire Wire Line
+	8400 1350 8400 1550
+Wire Wire Line
+	8400 1550 8550 1550
+Wire Wire Line
+	8150 2250 8150 1650
+Wire Wire Line
+	8150 1650 8550 1650
+Wire Wire Line
+	6800 3900 6250 3900
+Wire Wire Line
+	6250 3900 6250 4000
+Wire Wire Line
+	6250 4700 6250 4600
+Wire Wire Line
+	6250 4600 7000 4600
+Wire Wire Line
+	7200 5250 6250 5250
+Wire Wire Line
+	6250 5250 6250 5350
+Wire Wire Line
+	5750 2750 5750 5800
+Wire Wire Line
+	5750 3500 6100 3500
+Wire Wire Line
+	6100 4150 5750 4150
+Connection ~ 5750 4150
+Wire Wire Line
+	6100 4850 5750 4850
+Connection ~ 5750 4850
+Wire Wire Line
+	6100 5500 5750 5500
+Connection ~ 5750 5500
+Wire Wire Line
+	6250 1750 6250 3350
+Connection ~ 6250 1750
+Wire Wire Line
+	6800 1850 6800 3900
+Connection ~ 6800 1850
+Wire Wire Line
+	7000 4600 7000 1950
+Connection ~ 7000 1950
+Wire Wire Line
+	7200 2050 7200 5250
+Connection ~ 7200 2050
+Wire Wire Line
+	5450 3150 7200 3150
+Connection ~ 7200 3150
+Wire Wire Line
+	5450 3050 7000 3050
+Connection ~ 7000 3050
+Wire Wire Line
+	5450 2950 6800 2950
+Connection ~ 6800 2950
+Wire Wire Line
+	5450 2850 6250 2850
+Connection ~ 6250 2850
+Wire Wire Line
+	5450 2750 5750 2750
+Connection ~ 5750 3500
+$Comp
+L VCC #PWR08
+U 1 1 5B34E561
+P 6550 2500
+F 0 "#PWR08" H 6550 2350 50  0001 C CNN
+F 1 "VCC" H 6550 2650 50  0000 C CNN
+F 2 "" H 6550 2500 50  0001 C CNN
+F 3 "" H 6550 2500 50  0001 C CNN
+	1    6550 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 2500 6550 5500
+Wire Wire Line
+	6550 5500 6400 5500
+Wire Wire Line
+	6400 4850 6550 4850
+Connection ~ 6550 4850
+Wire Wire Line
+	6400 4150 6550 4150
+Connection ~ 6550 4150
+Wire Wire Line
+	6400 3500 6550 3500
+Connection ~ 6550 3500
+Wire Wire Line
+	5450 2650 6550 2650
+Connection ~ 6550 2650
+$EndSCHEMATC
